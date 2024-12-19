@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+    background: linear-gradient(45deg, rgb(8, 96, 96), rgb(35, 35, 120));
+}
+
+input {
+    border-radius: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    border: none;
+    text-align: center;
+    width: 5rem;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    text-align: center;
+    font-style: italic;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+label {
+    font-size: 1.2rem;
+}
+
+.main-heading {
+    font-size: 3rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.main-form {
+    text-align: center;
+}
+
+.main-form>* {
+    margin: 0.65rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+}
+
+@media (max-width=600px) {
+    
+}

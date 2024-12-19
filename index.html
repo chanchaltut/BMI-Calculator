@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator | By Chanchal Pradhan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="main-heading">
+        BMI Calculator
+    </h1>
+
+    <form class="main-form">
+        <label for="height">Enter your height please :</label>
+        <input id="height-feet" type="number" placeholder="Feet">
+        <input id="height-inch" type="number" max="12" placeholder="and Inch"> <br>
+        <label for="weight">Enter your weight please :</label>
+        <input id="weight" type="number" placeholder="In Kg"> <br>
+        <button type="button" class="button" onclick="calculateBMI()">Submit</button>
+        <p class="result-para"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
