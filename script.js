@@ -2,7 +2,7 @@ function calculateBMI() {
   let heightFeet = parseFloat(document.querySelector("#height-feet").value);
   let heightInch = parseFloat(document.querySelector("#height-inch").value);
   let weight = parseFloat(document.querySelector("#weight").value);
-  let resultPara = document.querySelector(".result-para");
+  const resultPara = document.querySelector(".result-para");
 
   if (
     isNaN(heightFeet) ||
@@ -13,7 +13,8 @@ function calculateBMI() {
     weight <= 0
   ) {
     resultPara.textContent = "Please enter valid height and weight values.";
-    resultPara.style.color = "red";
+    resultPara.style.color = "#ff3333";
+    resultPara.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
     return;
   }
 
@@ -23,17 +24,19 @@ function calculateBMI() {
 
   let fitness;
   if (BMI < 18.5) {
-    fitness = "You are Underweight";
+    fitness = "You are Underweight 🙄";
   } else if (BMI >= 18.5 && BMI <= 24.99) {
-    fitness = "You are fit";
+    fitness = "You are fit 🎉";
   } else if (BMI >= 25 && BMI <= 29.99) {
-    fitness = "You are Overweight";
+    fitness = "You are Overweight 😓";
   } else if (BMI >= 30 && BMI <= 34.99) {
-    fitness = "You come under Obesity I class";
+    fitness = "You come under Obesity I class 😔";
   } else if (BMI >= 35) {
-    fitness = "You come under Obesity II class";
+    fitness = "You come under Obesity II class 😔";
   }
 
   let result = `Your BMI is ${BMI}, ${fitness}`;
   resultPara.textContent = result;
+  resultPara.style.color = "#fff";
+  resultPara.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
 }
